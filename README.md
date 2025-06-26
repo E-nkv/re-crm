@@ -1,40 +1,37 @@
 # re-crm
 
-Welcome to **re-crm**, a modern, robust Customer Relationship Management system designed to empower your team with seamless collaboration, fine-grained access control, and an intuitive user experience.
+Welcome to **re-crm**, a modern Customer Relationship Management (CRM) system tailored for Real Estate Agency.
 
-And yes, the README was mostly done by GPT since real 10x devs don't write READMEs 🤑
+
 ---
 
 ## 🌟 Features
 
 - **Role-Based Access Control (RBAC)**  
-  Tailored access for different user roles including **Superadmins**, **Admins**, **Managers**, and **Sales Representatives**. Each role has customized permissions ensuring security and appropriate data visibility.
+  Tailored access for different user roles including **Superadmins**, **Admins**, **Managers**, and **Sales Representatives**. Each role has customized permissions.
 
 - **Personalized Dashboards**  
-  Every user is greeted with a dynamic, personalized dashboard.
 
 - **Real-Time Communication**  
-  Stay connected effortlessly with integrated chat functionality:  
-  - **Direct Messaging:** Active users can chat one-on-one for quick, private conversations.  
-  - **Channel-Based Discussions:** Create and participate in channels, similar to WhatsApp groups, to collaborate on projects, share updates, and foster team synergy. Supports img uploading. 
+  Integrated chat functionality via websockets: both one to one and via channels. Also supports image uploads in the chat.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Backend API:**  
-  Built with [Go](https://golang.org/) leveraging the [Chi](https://github.com/go-chi/chi) router for lightweight, modular HTTP services and [GORM](https://gorm.io/) as the ORM for seamless database interactions.
+  [Go](https://golang.org/), [Chi](https://github.com/go-chi/chi), [GORM](https://gorm.io/).
 
 - **Database:**  
-  Powered by [PostgreSQL](https://www.postgresql.org/), a powerful, reliable, and scalable relational database system that ensures your data is safe and performant.
+  [PostgreSQL](https://www.postgresql.org/)
 
 - **Frontend:**  
-  Developed using [React](https://reactjs.org/) with **TypeScript** for type safety and maintainability, styled elegantly with [Tailwind CSS](https://tailwindcss.com/) for rapid, responsive UI development.
+  [React](https://reactjs.org/) with **TypeScript** and [Tailwind CSS](https://tailwindcss.com/)
 
 - **Containerization & Deployment:**  
-  Utilizes [Docker](https://www.docker.com/) to streamline development and deployment workflows:  
-  - In development, Docker spins up the PostgreSQL database 
-  - In production, Docker orchestrates the deployment of the entire application stack, ensuring consistency and scalability.
+  Utilizes [Docker](https://www.docker.com/)
+  - In development, to run the db
+  - In prod: to deploy the app
 
 ---
 
